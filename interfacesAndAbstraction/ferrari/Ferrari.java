@@ -10,7 +10,7 @@ public class Ferrari implements Car {
     }
 
     @Override
-    public String breaks() {
+    public String brakes() {
         return "Brakes!";
     }
 
@@ -21,6 +21,6 @@ public class Ferrari implements Car {
 
     @Override
     public String toString() {
-        return String.format("%s/%s/%s/%s", model, breaks(), gas(), driverName);
+        return String.format("%s/%s/%s/%s", model, brakes(), gas(), driverName);
     }
 }
