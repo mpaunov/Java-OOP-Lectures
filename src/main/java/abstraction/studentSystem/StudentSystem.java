@@ -27,7 +27,7 @@ public class StudentSystem {
             case "Exit":
                 return command;
             default:
-                throw new IllegalArgumentException("Unknown command " + command);
+                throw new IllegalArgumentException("Unknown desingPatterns.command " + command);
         }
     }
 

@@ -1,6 +1,6 @@
 package unitTesting.rpg_lab;
 
-public class Hero {
+public class Hero implements Comparable<Hero> {
 
     private String name;
     private int experience;
@@ -35,5 +35,10 @@ public class Hero {
     // Package private so it can be called in tests
     void setExperience(int experience) {
         this.experience = experience;
+    }
+
+    @Override
+    public int compareTo(Hero other) {
+        return Integer.compare(other.weapon.getAttackPoints(), this.weapon.getAttackPoints());
     }
 }
