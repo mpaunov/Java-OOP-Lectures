@@ -16,6 +16,9 @@ public class Main {
 
         List<Hero> heroes = new ArrayList<>();
 
+
+
+
         heroes.add(new Hero("Azgor", new Axe(10, 100)));
         heroes.add(new Hero("Gimli", new Axe(1000, 100)));
         heroes.add(new Hero("Gandalf", new Axe(50, 100)));
